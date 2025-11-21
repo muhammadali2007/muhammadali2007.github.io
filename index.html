@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Smallville – Mukhammad Ali</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(
+                to bottom,
+                #0A3D4A 0%,
+                #0E4B56 50%,
+                #052533 100%
+            );
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 18px;
+            padding: 30px 26px 40px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+
+        h1, h2, h3 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .intro b {
+            color: #4fe0b5;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 15px 0 20px;
+        }
+
+        .two-columns {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: rgba(10, 168, 108, 0.75);
+            padding: 22px 20px 24px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            flex: 1 1 320px;
+            max-width: 520px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            animation: fadeUp 0.5s ease-out forwards;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .card ul,
+        .card ol {
+            margin-left: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        .card li {
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: #021824;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .mood-title {
+            text-align: center;
+            margin: 10px 0 18px;
+        }
+
+        .mood-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .mood-item {
+            text-align: center;
+            flex: 1 1 320px;
+            max-width: 520px;
+        }
+
+        .mood-item p {
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .mood-image {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 16px;
+            display: block;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .neighbours-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .neighbours-list {
+            margin-left: 1.2rem;
+        }
+
+        .neighbours-list li {
+            margin-bottom: 6px;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                padding: 22px 16px 28px;
+            }
+
+            .page-subtitle {
+                font-size: 16px;
+            }
+
+            .intro {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <h1 class="page-title">About Mukhammad Ali Turdiyev</h1>
+        <p class="page-subtitle">
+            NAME: <b>Mukhammad Ali Turdiyev Abduzoxidovich</b>
+        </p>
+        <p class="intro">
+            I am 18, I study at <b>Inha University in Tashkent</b>, my goal is to become
+            an IT guy like Azim Pulat 😁
+        </p>
+
+        <hr />
+
+        <section class="two-columns">
+            <article class="card">
+                <h2>My Favorite Singers</h2>
+                <ul>
+                    <li>
+                        <b>Tokhir Sodikov</b>
+                        <ol>
+                            <li>Tokhir Sodikov &amp; Rayhon – <a href="https://youtu.be/gnw_XikOnck?si=H4tXFfNu-XJ1873E" target="_blank">Indamay</a></li>
+                            <li>Tokhir Sodikov – <a href="https://youtu.be/CsDtWBoqKLk?si=mBzBVFjFWza2_rIx" target="_blank">Sog'indim ishon</a></li>
+                            <li>Tokhir Sodikov – <a href="https://youtu.be/bac_5rXIT2w?si=zuSfOqhkwEae-zth" target="_blank">Bu Kun</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Konsta</b>
+                        <ol>
+                            <li>Konsta &amp; Lola – <a href="https://youtu.be/JvUZVUQOfs8?si=BJezqn4jLKE60GHU" target="_blank">Sog'indim</a></li>
+                            <li>Konsta &amp; Sevara Nazarkhan – <a href="https://youtu.be/s07oR6aHrAw?si=6RnWYGb-UTGYdpt0" target="_blank">Asragin meni</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>My Classes This Quarter</h2>
+                <ul>
+                    <li>Intro2IT by <strong>Sarvar Abdullaev</strong></li>
+                    <li>Physics by <strong>Farruh Atamurotov</strong></li>
+                    <li>Academic English (AE) by <strong>Umida Ubaydullaeva</strong></li>
+                    <li>Academic English Reading (AER) by <strong>Umida Ubaydullaeva</strong></li>
+                    <li>Calculus by <strong>Utkir Safarov</strong></li>
+                    <li>Object Oriented Programming (OOP) by <strong>Sharof Suvanov</strong></li>
+                    <li>Physics Experiment by <strong>Farruh Atamurotov</strong></li>
+                </ul>
+            </article>
+        </section>
+
+        <hr />
+
+
+        <h2 class="mood-title">My Mood</h2>
+        <section class="mood-grid">
+            <div class="mood-item">
+                <p>Happy Me</p>
+                <img
+                    class="mood-image"
+                    src="https://cdn.nur.kz/images/1120x630/94010c3bf538093f.jpeg?version=1"
+                    alt="Happy me"
+                />
+            </div>
+
+            <div class="mood-item">
+                <p>Sad Me</p>
+                <img
+                    class="mood-image"
+                    src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6529748a4253376007bbdfa9_652974924253376007bbe3ab/scale_1200"
+                    alt="Sad me"
+                />
+            </div>
+        </section>
+
+        <section>
+            <h2 class="neighbours-title">Fun Facts About My Neighbours</h2>
+            <ul class="neighbours-list">
+                <li>
+                    <b>Nodira opa:</b> They are super friendly, they even used to share
+                    internet with us.
+                </li>
+                <li>
+                    <b>Michael:</b> He is my best friend, very smart and friendly.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
