@@ -31,11 +31,9 @@
             background: rgba(0, 0, 0, 0.35);
             border-radius: 18px;
             padding: 30px 26px 40px;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
-            backdrop-filter: blur(6px);
         }
 
-        h1, h2, h3 {
+        h1, h2 {
             font-family: "Times New Roman", Times, serif;
         }
 
@@ -77,22 +75,10 @@
 
         .card {
             background-color: rgba(10, 168, 108, 0.75);
-            padding: 22px 20px 24px;
+            padding: 22px 20px;
             border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
             flex: 1 1 320px;
             max-width: 520px;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            animation: fadeUp 0.5s ease-out forwards;
-        }
-
-        .card:nth-child(2) {
-            animation-delay: 0.1s;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
         }
 
         .card h2 {
@@ -112,9 +98,9 @@
         }
 
         a {
-            color: #021824;
-            text-decoration: none;
+            color: #4fe0b5;
             font-weight: bold;
+            text-decoration: none;
         }
 
         a:hover {
@@ -150,8 +136,6 @@
             width: 100%;
             max-width: 520px;
             border-radius: 16px;
-            display: block;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
         }
 
         .neighbours-title {
@@ -165,17 +149,6 @@
 
         .neighbours-list li {
             margin-bottom: 6px;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         img {
@@ -194,9 +167,6 @@
 
             .intro {
                 font-size: 14px;
-            }
-            .aa {
-                color: #ffffff;
             }
         }
     </style>
@@ -252,44 +222,25 @@
 
         <hr />
 
-
         <h2 class="mood-title">My Mood</h2>
         <section class="mood-grid">
             <div class="mood-item">
                 <p>Happy Me</p>
-                <img
-                    class="mood-image"
-                    src="https://cdn.nur.kz/images/1120x630/94010c3bf538093f.jpeg?version=1"
-                    alt="Happy me"
-                />
+                <img class="mood-image" src="https://cdn.nur.kz/images/1120x630/94010c3bf538093f.jpeg?version=1" alt="Happy me"/>
             </div>
 
             <div class="mood-item">
                 <p>Sad Me</p>
-                <img
-                    class="mood-image"
-                    src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6529748a4253376007bbdfa9_652974924253376007bbe3ab/scale_1200"
-                    alt="Sad me"
-                />
+                <img class="mood-image" src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6529748a4253376007bbdfa9_652974924253376007bbe3ab/scale_1200" alt="Sad me"/>
             </div>
         </section>
 
         <section>
             <h2 class="neighbours-title">Fun Facts About My Neighbours</h2>
             <ul class="neighbours-list">
-                <li>
-                    <b>Nodira opa:</b> They are super friendly, they even used to share
-                    internet with us.
-                </li>
-                <li>
-                    <b>Michael:</b> He is my best friend, very smart and friendly.
-
-                </li>
-                <li>
-                    <b><a class="aa" href="https://muhammadali2007.github.io/">My github</a></b>
-                </li>
-                
-                    
+                <li><b>Nodira opa:</b> They are super friendly, they even used to share internet with us.</li>
+                <li><b>Michael:</b> He is my best friend, very smart and friendly.</li>
+                <li><b><a href="https://muhammadali2007.github.io/">My GitHub</a></b></li>
             </ul>
         </section>
     </main>
